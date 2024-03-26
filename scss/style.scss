@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 body {
-    font-family: " DM Sans";
+    font-family: "DM Sans";
 
     .order_now {
         border: 0;
@@ -25,14 +24,14 @@ body {
         header {
             margin: 0 auto;
             display: flex;
-            max-width: 1200px;
+            max-width: 1440px;
             width: 100%;
             height: 48px;
             background-color: white;
             justify-content: space-between;
-            padding: 12px 98px;
             align-items: center;
             border-bottom: 1px solid rgb(225, 200, 200);
+            padding: 12px 0;
 
             nav {
                 display: flex;
@@ -71,6 +70,7 @@ body {
             justify-content: center;
             align-items: center;
             display: flex;
+            margin: 0 auto;
 
             .wrapper {
                 max-width: 770px;
@@ -160,6 +160,8 @@ body {
 
     .modal {
         position: fixed;
+        overflow: hidden;
+        visibility: hidden;
         top: 0;
         left: 0;
         width: 100%;
@@ -168,8 +170,13 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        opacity: 0;
+        transition: 0.5s;
+
 
         .container {
+            // transform: translateX(10000px) scale(0);
+            transform: scale(0);
             width: 356px;
             height: 167px;
             top: 313px;
@@ -248,5 +255,16 @@ body {
             }
 
         }
+    }
+    .active{
+        opacity: 1;
+        visibility: visible;
+         .container{
+            transform: translateX(0);
+            transition: 0.5s;
+            transform: scale(1);
+
+         }
+        
     }
 }
