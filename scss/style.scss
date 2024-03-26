@@ -3,7 +3,25 @@
 body {
     font-family: " DM Sans";
 
-    .madol {
+    .order_now {
+        border: 0;
+        padding: 12px 20px 12px 20px;
+        gap: 10px;
+        border-radius: 50px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        outline: none;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: white;
+        background: rgba(72, 98, 132, 1);
+    }
+
+    .content {
         header {
             margin: 0 auto;
             display: flex;
@@ -42,43 +60,25 @@ body {
 
                 }
 
-                .order_now {
-                    border: 0;
-                    padding: 12px 20px 12px 20px;
-                    gap: 10px;
-                    border-radius: 50px;
-                    border: 1px 0px 0px 0px;
-                    opacity: 0px;
-                    outline: none;
-                    font-family: DM Sans;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: 0.5px;
-                    text-align: left;
-                    color: white;
-                    background: rgba(72, 98, 132, 1);
 
-
-
-                }
             }
         }
 
         main {
             max-width: 1440px;
             width: 100%;
-            height: 710px;
+            height: 650px;
             justify-content: center;
             align-items: center;
-
             display: flex;
 
             .wrapper {
                 max-width: 770px;
                 width: 100%;
                 height: 445px;
-                background-color: rgba(127, 255, 212, 0.372);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 .moodal {
                     font-size: 28px;
@@ -95,10 +95,158 @@ body {
                     line-height: 76px;
                     letter-spacing: 0.5px;
                     text-align: center;
+                    color: rgba(72, 98, 132, 1);
+
 
                 }
 
+                .welcome {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    margin-top: 16px;
+                    color: rgb(117, 141, 173);
+
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 24px;
+                    margin-top: 24px;
+
+                    .explore {
+                        border: 0;
+                        padding: 12px 20px 12px 20px;
+                        gap: 10px;
+                        border-radius: 50px;
+                        border: 1px solid rgba(72, 98, 132, 1);
+                        opacity: 0px;
+                        outline: none;
+                        font-family: DM Sans;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0.5px;
+                        text-align: left;
+                        color: rgba(72, 98, 132, 1);
+                        background: white;
+
+                    }
+
+                }
+
+                .by {
+                    font-family: DM Sans;
+                    font-size: 21px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    letter-spacing: 0.15000000596046448px;
+                    text-align: center;
+                    color: rgba(156, 176, 201, 1);
+                    margin-top: 64px;
+                }
+
+                .logs {
+                    display: flex;
+                    gap: 64px;
+                    margin-top: 20px;
+                }
+
             }
+        }
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(47, 56, 79, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            width: 356px;
+            height: 167px;
+            top: 313px;
+            left: 542px;
+            gap: 0px;
+            border-radius: 4px;
+            opacity: 0px;
+            background-color: white;
+
+            .first_line {
+                .calm {
+                    font-family: DM Sans;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 20.83px;
+                    text-align: left;
+                    color: rgba(47, 56, 79, 1);
+                }
+
+
+
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 9px 0px 16px;
+            }
+
+            .madol_p {
+                width: 308px;
+                height: 32px;
+                font-family: DM Sans;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15.62px;
+                text-align: left;
+                padding: 29px 32px 0 16px;
+                color: rgba(47, 56, 79, 1);
+
+            }
+
+            .but {
+                display: flex;
+                gap: 6px;
+                padding: 35px 21px 18px 95px;
+
+
+
+                .deny {
+                    border: none;
+                    padding: 4px 40px;
+                    border-radius: 3px;
+                    border: 2px solid rgba(255, 151, 201, 1);
+                    color: rgba(255, 151, 201, 1);
+                    background-color: inherit;
+                    font-family: DM Sans;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15.62px;
+                    text-align: left;
+                }
+
+                .confirm {
+                    border: none;
+                    padding: 4px 40px;
+                    border-radius: 3px;
+                    background-color: inherit;
+                    background: rgba(28, 49, 119, 1);
+                    color: white;
+                    font-family: DM Sans;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15.62px;
+                    text-align: left;
+
+
+                }
+            }
+
         }
     }
 }

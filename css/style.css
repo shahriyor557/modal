@@ -3,7 +3,25 @@ body {
   font-family: " DM Sans";
 }
 
-body .madol header {
+body .order_now {
+  border: 0;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  outline: none;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: white;
+  background: #486284;
+}
+
+body .content header {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +40,7 @@ body .madol header {
   border-bottom: 1px solid #e1c8c8;
 }
 
-body .madol header nav {
+body .content header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +50,7 @@ body .madol header nav {
   gap: 48px;
 }
 
-body .madol header nav ul {
+body .content header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,32 +64,14 @@ body .madol header nav ul {
   text-align: center;
 }
 
-body .madol header nav ul li {
+body .content header nav ul li {
   color: #486284;
 }
 
-body .madol header nav .order_now {
-  border: 0;
-  padding: 12px 20px 12px 20px;
-  gap: 10px;
-  border-radius: 50px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  outline: none;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: white;
-  background: #486284;
-}
-
-body .madol main {
+body .content main {
   max-width: 1440px;
   width: 100%;
-  height: 710px;
+  height: 650px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -83,14 +83,23 @@ body .madol main {
   display: flex;
 }
 
-body .madol main .wrapper {
+body .content main .wrapper {
   max-width: 770px;
   width: 100%;
   height: 445px;
-  background-color: rgba(127, 255, 212, 0.372);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .madol main .wrapper .moodal {
+body .content main .wrapper .moodal {
   font-size: 28px;
   font-weight: 500;
   line-height: 32px;
@@ -99,11 +108,163 @@ body .madol main .wrapper .moodal {
   color: #7b95b7;
 }
 
-body .madol main .wrapper h1 {
+body .content main .wrapper h1 {
   font-size: 60px;
   font-weight: 700;
   line-height: 76px;
   letter-spacing: 0.5px;
   text-align: center;
+  color: #486284;
+}
+
+body .content main .wrapper .welcome {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 16px;
+  color: #758dad;
+}
+
+body .content main .wrapper .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+body .content main .wrapper .buttons .explore {
+  border: 0;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  border: 1px solid #486284;
+  opacity: 0px;
+  outline: none;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #486284;
+  background: white;
+}
+
+body .content main .wrapper .by {
+  font-family: DM Sans;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: center;
+  color: #9cb0c9;
+  margin-top: 64px;
+}
+
+body .content main .wrapper .logs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+  margin-top: 20px;
+}
+
+body .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(47, 56, 79, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .modal .container {
+  width: 356px;
+  height: 167px;
+  top: 313px;
+  left: 542px;
+  gap: 0px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: white;
+}
+
+body .modal .container .first_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 9px 0px 16px;
+}
+
+body .modal .container .first_line .calm {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  text-align: left;
+  color: #2f384f;
+}
+
+body .modal .container .madol_p {
+  width: 308px;
+  height: 32px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.62px;
+  text-align: left;
+  padding: 29px 32px 0 16px;
+  color: #2f384f;
+}
+
+body .modal .container .but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  padding: 35px 21px 18px 95px;
+}
+
+body .modal .container .but .deny {
+  border: none;
+  padding: 4px 40px;
+  border-radius: 3px;
+  border: 2px solid #ff97c9;
+  color: #ff97c9;
+  background-color: inherit;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.62px;
+  text-align: left;
+}
+
+body .modal .container .but .confirm {
+  border: none;
+  padding: 4px 40px;
+  border-radius: 3px;
+  background-color: inherit;
+  background: #1c3177;
+  color: white;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.62px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
