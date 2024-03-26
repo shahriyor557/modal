@@ -1,1 +1,109 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+body {
+  font-family: " DM Sans";
+}
+
+body .madol header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 48px;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 98px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e1c8c8;
+}
+
+body .madol header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+}
+
+body .madol header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "DM Sans";
+  gap: 48px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+body .madol header nav ul li {
+  color: #486284;
+}
+
+body .madol header nav .order_now {
+  border: 0;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  outline: none;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: white;
+  background: #486284;
+}
+
+body .madol main {
+  max-width: 1440px;
+  width: 100%;
+  height: 710px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .madol main .wrapper {
+  max-width: 770px;
+  width: 100%;
+  height: 445px;
+  background-color: rgba(127, 255, 212, 0.372);
+}
+
+body .madol main .wrapper .moodal {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 auto;
+  color: #7b95b7;
+}
+
+body .madol main .wrapper h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 76px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
